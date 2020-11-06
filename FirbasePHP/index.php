@@ -4,7 +4,7 @@ require 'vendor/autoload.php';
 use Kreait\Firebase\Factory;
 use Kreait\Firebase\ServiceAccount;
 //name of the firebase json
-$serviceaccount= ServiceAccount::fromJsonFile('./example-firebase-adminsdk-t5a2q-e36857cceb.json');
+$serviceaccount= ServiceAccount::fromJsonFile('json file');
 $factory = (new Factory)
     ->withServiceAccount($serviceaccount)->create();
 
